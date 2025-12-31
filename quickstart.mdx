@@ -1,0 +1,140 @@
+---
+title: Quickstart Guide
+description: Set up your BG Ventures account and create your first documentation space in just a few minutes.
+---
+
+## Prerequisites
+
+Before starting, ensure you have:
+
+- A modern web browser like Chrome, Firefox, or Safari
+- An email address for account verification
+- Optional: A GitHub account for version control integration
+
+<Callout kind="info">
+
+BG Ventures works best with JavaScript enabled. Disable any ad blockers that might interfere with the dashboard.
+
+</Callout>
+
+## Create Your Account
+
+Sign up for BG Ventures in under 2 minutes. Follow these steps to get started.
+
+<Steps>
+  <Step title="Visit the Dashboard" icon="globe">
+    Navigate to `https://dashboard.bgventures.com` and click **Sign Up**.
+
+    Choose your preferred method:
+
+    <Tabs>
+      <Tab title="Email" icon="mail">
+        Enter your email and create a strong password.
+      </Tab>
+      <Tab title="Google" icon="google">
+        Click **Continue with Google** for one-click signup.
+      </Tab>
+      <Tab title="GitHub" icon="github">
+        Authorize with your GitHub account.
+      </Tab>
+    </Tabs>
+  </Step>
+
+  <Step title="Verify Email" icon="check-circle">
+    Check your inbox for the verification email from BG Ventures.
+
+    Click the link to activate your account. If you don't see it, check your spam folder.
+  </Step>
+
+  <Step title="Complete Onboarding" icon="user">
+    Provide your name, company, and preferred workspace name.
+
+    Select your plan (free tier available for starters).
+  </Step>
+</Steps>
+
+## Create Your First Documentation Project
+
+Once logged in, create a new documentation space.
+
+<Steps>
+  <Step title="New Project" icon="plus">
+    From the dashboard, click **New Documentation Space**.
+
+    Enter a name like `My Project Docs` and select a template (e.g., API Reference or Product Guide).
+  </Step>
+
+  <Step title="Customize Workspace" icon="settings">
+    Access workspace settings via the gear icon.
+
+    Update the brand color to `#3B82F6` and add your logo.
+
+````jsx
+// Example config.json for advanced customization
+{
+  "theme": {
+    "primaryColor": "#3B82F6"
+  },
+  "sidebar": {
+    "collapsed": false
+  },
+  "features": {
+    "search": true,
+    "analytics": true
+  }
+}
+````
+  </Step>
+</Steps>
+
+<Callout kind="tip">
+
+Save your config as `bgventures.config.json` in the project root for Git sync.
+
+</Callout>
+
+## Upload and Organize Your First Document
+
+Add content to your space.
+
+<Steps>
+  <Step title="Upload Document" icon="upload">
+    Drag and drop Markdown files into the editor, or click **Import**.
+
+    Supported formats: `.md`, `.mdx`, `.txt`.
+  </Step>
+
+  <Step title="Organize Navigation" icon="menu">
+    Use the sidebar to create folders and reorder pages.
+
+    Set a homepage via **Settings > General > Homepage**.
+  </Step>
+
+  <Step title="Publish" icon="globe">
+    Click **Publish** to make your docs live at `https://docs.bgventures.com/my-project-docs`.
+
+    Share the link or embed it on your site.
+  </Step>
+</Steps>
+
+## Next Steps
+
+Explore more features to level up your documentation.
+
+<Columns cols={3}>
+  <Card title="Authentication" icon="lock" href="/authentication">
+    Secure your docs with API keys and user roles.
+  </Card>
+  <Card title="Customization" icon="palette" href="/configuration">
+    Advanced theming and layout options.
+  </Card>
+  <Card title="Integrations" icon="plug" href="/introduction">
+    Connect GitHub, Slack, and more.
+  </Card>
+</Columns>
+
+<Callout kind="success">
+
+Congratulations! Your first BG Ventures documentation space is ready. Dive into the linked guides for advanced setup.
+
+</Callout>

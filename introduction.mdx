@@ -1,0 +1,120 @@
+---
+title: Introduction to BG Ventures
+description: Learn about BG Ventures, a documentation management platform designed to help you organize and maintain project documentation efficiently.
+---
+
+## Overview
+
+BG Ventures empowers you to create, organize, and maintain comprehensive documentation for your projects. You get a centralized space to manage Markdown-based docs, collaborate with teams, and publish polished documentation sites. Focus on content while the platform handles versioning, search, and deployment.
+
+This documentation space serves as your hub for all BG Ventures features. Explore key capabilities, set up your first project, and customize your docs to match your brand.
+
+<Callout kind="info">
+BG Ventures uses brand color `#3B82F6` for primary elements like buttons and links.
+</Callout>
+
+## Key Features
+
+Discover the core benefits that make BG Ventures ideal for teams and individual developers.
+
+<Columns cols={3}>
+  <Card title="Centralized Organization" icon="book-open" href="#organization">
+    Group docs into projects and spaces. Use folders, tags, and search to find content instantly.
+  </Card>
+
+  <Card title="Real-Time Collaboration" icon="users" href="#collaboration">
+    Invite team members, edit simultaneously, and track changes with version history.
+  </Card>
+
+  <Card title="Custom Branding" icon="palette" href="#branding">
+    Apply your colors like `#3B82F6` and logos. Generate custom domains for published sites.
+  </Card>
+</Columns>
+
+## Brand Guidelines
+
+Follow these guidelines to maintain consistency across your documentation.
+
+<Expandable title="Primary Color Usage" default-open="true">
+Use `#3B82F6` for:
+
+- Primary buttons and calls-to-action
+- Links and hover states
+- Header accents
+
+| Element       | Hex Code   | Usage Example                  |
+|---------------|------------|--------------------------------|
+| Primary      | `#3B82F6` | Buttons, links                |
+| Secondary    | `#1E40AF` | Subtle backgrounds            |
+| Text         | `#1F2937` | Body text                     |
+
+Avoid using the primary color for text on light backgrounds to ensure readability.
+</Expandable>
+
+## Quick Start
+
+Get up and running with BG Ventures in minutes.
+
+<Steps>
+  <Step title="Sign Up" icon="user-plus">
+    Visit [https://app.bgventures.com](https://app.bgventures.com) and create a free account. Verify your email to unlock full features.
+  </Step>
+
+  <Step title="Create a Project" icon="plus">
+    Click "New Project" in the dashboard. Enter a name like "My App Docs" and select a template.
+  </Step>
+
+  <Step title="Add Your First Doc" icon="file-text">
+    Create `introduction.mdx` with basic Markdown.
+
+````mdx
+# Welcome
+
+This is your first document.
+````
+
+  </Step>
+
+  <Step title="Publish" icon="globe">
+    Click "Publish" to generate your live site at `your-project.bgventures.com`.
+  </Step>
+</Steps>
+
+<Tabs>
+  <Tab title="npm Integration" icon="package">
+    Embed docs in your app:
+
+````javascript
+import { DocsEmbed } from '@bgventures/embed';
+
+<DocsEmbed projectId="your-project-id" />
+````
+
+  </Tab>
+
+  <Tab title="GitHub Sync" icon="github">
+    Connect your repo for auto-sync:
+
+````bash
+git remote add bgventures https://git.bgventures.com/your-project.git
+git push bgventures main
+````
+
+  </Tab>
+</Tabs>
+
+## Next Steps
+
+<Columns cols={2}>
+  <Card title="Quickstart Guide" icon="zap" href="/quickstart">
+    Dive deeper into advanced setup and integrations.
+  </Card>
+
+  <Card title="Authentication" icon="shield" href="/authentication">
+    Secure your docs with API keys and team access.
+  </Card>
+</Columns>
+
+<Callout kind="tip">
+Start with the Quickstart Guide to build your first full documentation site. Customize with `#3B82F6` for a branded look.
+</Callout>
